@@ -1,0 +1,32 @@
+package geekbrains.java2.lesson1.homework;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+int a = 4;
+
+            String [] arr = {"aabsjjdfnpubptjfnnjksbfobpw",
+                    "absjjdfnpubptjfnnjksbfobpw",
+                    "bsjjdfnpubptjfnnjksbfobpw",
+                    "bsjjdfnpubptjfnnjksbfobpw",
+                    "bsjjdfnpubptjfnnjksbfpw"};
+
+
+
+            char[] mass = { 'a', 'o', 'u', 'i', 'e', 'y'};
+            int index = 1;
+
+            for (int x = 0; x < a + 1; x++){
+                for (int z = 0; z < arr[a].length(); z++)
+                    for (int y = 0; y < mass.length; y++){
+                        if (mass[y] == arr[x].charAt(z)){
+                            index++;
+                        }
+                    }
+                System.out.println(index + " ");
+                index = 0;
+            }
+
+        }
+    }
